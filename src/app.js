@@ -15,7 +15,7 @@ app.set("views",viewsPath)
 hbs.registerPartials(partialsPath)
 app.use(express.static(publicPath))
 
-app.get("",(req,res)=>{
+app.get("/",(req,res)=>{
     res.render("index",{
         title:"Live WeatherAPI"
     })
